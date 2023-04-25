@@ -1,0 +1,18 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Main", "BloodTheme")
+
+--Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("Dupe Pets", "Dupes ur pets", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/PetsimulatorScripts/AutoQuestComplete/main/TradeScam/DupePets/AutoFarmComets/AutoFarmGui/GemsGlitch'))()
+
+MainSection:NewToggle("TradeScam", "Put pets away when on", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/PetsimulatorScripts/AutoQuestComplete/main/TradeScam/DupePets/AutoFarmComets/AutoFarmGui/GemsGlitch'))()
+    else
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/PetsimulatorScripts/AutoQuestComplete/main/TradeScam/DupePets/AutoFarmComets/AutoFarmGui/GemsGlitch'))()
+    end
+end)
